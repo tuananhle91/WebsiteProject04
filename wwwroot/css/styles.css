@@ -16,8 +16,6 @@ body {
     scroll-behavior: smooth;
 }
 
-
-
 /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Common ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 .container {
     width: 1170px;
@@ -47,6 +45,38 @@ a {
 
 .btn:hover {
     opacity: 0.8;
+}
+
+.buttons {
+    margin-top: 38px;
+    display: flex;
+    column-gap: 18px;
+}
+
+.buttons .control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #575f66;
+    outline: none;
+    color: #575f66;
+    background: #fff;
+    transition: 0.25s;
+
+}
+
+.control-btn:hover {
+    color: #fff;
+    border-color: #2e80ce;
+    background: #2e80ce;
+    cursor: pointer;
+}
+
+.buttons .control-next-icon {
+    rotate: 180deg;
 }
 
 /* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Common ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
@@ -494,40 +524,185 @@ a {
     color: #575F66;
 }
 
-.members .members-buttons {
-    margin-top: 38px;
-    display: flex;
-    column-gap: 18px;
+.member-buttons {
     justify-content: center;
 }
 
-.members-buttons .control-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    border: 1px solid #575f66;
-    outline: none;
-    color: #575f66;
-    background: #fff;
-    transition: 0.25s;
-
-}
-
-.members-buttons .control-next-icon {
-    rotate: 180deg;
-}
-
-.control-btn:hover {
-    color: #fff;
-    border-color: #2e80ce;
-    background: #2e80ce;
-    cursor: pointer;
-}
 
 /* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Members ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
+
+
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Install ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+.install {
+    padding: 180px 0 85px 0;
+}
+
+.install .install-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2E80CE;
+    border-radius: 4px;
+    padding: 0 70px;
+}
+
+.install .install-img {
+    display: block;
+    object-fit: cover;
+    width: 284px;
+    height: 522px;
+    margin-top: -95px;
+
+}
+
+.install .install-content {
+    max-width: 586px;
+}
+
+.install .title {
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    max-width: 489px;
+}
+
+.install .desc {
+    margin-top: 18px;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #FFFFFF;
+    max-width: 586px;
+}
+
+.install .install-row {
+    margin-top: 38px;
+    display: flex;
+    gap: 28px;
+}
+
+/* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Install ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
+
+
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ News & Events. ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+.new {
+    padding: 85px 0;
+}
+
+.new .new-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new-left {
+    flex-shrink: 0;
+}
+
+.new .new-left .title {
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #10375C;
+    max-width: 470px;
+}
+
+.new .new-left .read-all {
+    display: inline-block;
+    margin-top: 28px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.56;
+    text-decoration-line: underline;
+    text-underline-offset: 5px;
+    color: #10375C;
+}
+
+.new .new-left .new-buttons {
+    margin-top: 28px;
+}
+
+.new .new-list {
+    display: flex;
+    column-gap: 30px;
+    max-width: 570px;
+}
+
+.new .new-item {
+    flex: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.25s;
+}
+
+.new .new-item:hover {
+    box-shadow: 0px 18px 50px rgba(0, 0, 0, 0.05);
+}
+
+.news-item:hover .new-item-thumb .img {
+    transform: scale(1.1);
+}
+
+new-item:hover .new-content {
+    border-color: #fff;
+}
+
+.new .new-item .new-item-thumb {
+    height: 172px;
+    overflow: hidden;
+}
+
+.new .new-item-thumb .img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.25s;
+}
+
+.new .new-content {
+    padding: 24px 24px 16px;
+    border: 1px solid #e8ebee;
+    border-top: none;
+    border-radius: 0 0 12px 12px;
+    background: #fff;
+    transition: 0.25s;
+}
+
+.new-content .new-title a {
+    margin-top: 18px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.62;
+    color: #10375C;
+}
+
+.new-content .new-desc {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.71;
+    color: #575F66;
+}
+
+.new-content .new-item-more {
+    display: inline-block;
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #10375C;
+    line-height: 1.8;
+}
+
+.new-content .new-item-more:hover {
+    color: #2e80ce;
+}
+
+/* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ News & Events. ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
+
 
 
 /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
