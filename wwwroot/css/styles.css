@@ -466,6 +466,7 @@ a {
 /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Members ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 .members {
     padding: 85px 0;
+    text-align: center;
 }
 
 .members-top {
@@ -516,7 +517,8 @@ a {
     transform: scale(1.1);
 }
 
-.members-item .members-name {
+.members-item .member-name {
+    margin-top: 12px;
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.75;
@@ -528,7 +530,6 @@ a {
     font-weight: 300;
     font-size: 1.4rem;
     line-height: 1.86;
-    text-align: center;
     color: #575F66;
 }
 
@@ -764,6 +765,159 @@ new-item:hover .new-content {
 /* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Appointment ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
 
 /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Footer ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+.footer {
+    margin-top: 85px;
+    background: #10375C;
+}
+
+.footer .content {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    gap: 78px;
+    position: relative;
+}
+
+.footer .content::after {
+    content: "";
+    width: 1170px;
+    height: 1px;
+    background: #406181;
+    display: block;
+    position: absolute;
+    bottom: -18px;
+}
+
+.footer .column-1 {
+    width: 28.7%;
+}
+
+.footer .column-2,
+.footer .column-3 {
+    width: 14%;
+}
+
+.footer .column-4 {
+    width: 28%;
+}
+
+.footer .footer-col1-desc {
+    margin-top: 21px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #A9B3BB;
+}
+
+.footer .column-bot {
+    margin-top: 28px;
+}
+
+.footer .footer-title {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer .list li a {
+    display: inline-block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #A9B3BB;
+    margin-bottom: 10px;
+}
+
+.footer .list li:hover a {
+    opacity: 0.8;
+}
+
+.footer .socials {
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 28px;
+}
+
+.footer .socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    color: #2E80CE;
+    transition: 0.25s;
+}
+
+.footer .socials a:hover {
+    background: #2E80CE;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.footer .subscribe {
+    margin-top: 28px;
+}
+
+.footer .footer-col4-desc {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #A9B3BB;
+}
+
+.footer .footer-form {
+    display: flex;
+    column-gap: 12px;
+    margin-top: 10px;
+}
+
+
+.footer .footer-email {
+    width: 212px;
+    height: 46px;
+    border: 1px solid #406181;
+    border-radius: 4px;
+    background: transparent;
+    padding: 0 10px;
+    outline: none;
+}
+
+.footer .footer-email::placeholder {
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #9ca8b1;
+}
+
+
+.footer .footer-submit {
+    margin-left: 12px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #FFFFFF;
+    width: 108px;
+    height: 46px;
+    background: #2E80CE;
+    border-radius: 4px;
+}
+
+.footer .copyright {
+    margin-top: 57px;
+    padding-bottom: 42px;
+}
+
+.footer .copyright-text {
+    font-size: 1.4rem;
+    line-height: 1.86;
+    text-align: center;
+    color: #aab3ba;
+}
 
 
 /* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Footer ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
