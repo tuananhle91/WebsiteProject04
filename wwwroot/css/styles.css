@@ -28,23 +28,26 @@ a {
 }
 
 .btn {
+    --height: 44px;
+    display: inline-block;
     min-width: 104px;
-    /* height: 44px; */
-    background: #2E80CE;
-    border-radius: 999px;
+    height: var(--height);
     font-weight: 400;
     font-size: 1.6rem;
-    line-height: 1.75;
+    line-height: var(--height);
     text-align: center;
     color: #FFFFFF;
+    background: #2E80CE;
+    border-radius: 999px;
     border: none;
-    cursor: pointer;
     display: inline-block;
-    padding: 11px;
+    padding: 0 20px;
 }
 
 .btn:hover {
     opacity: 0.8;
+    cursor: pointer;
+
 }
 
 .buttons {
@@ -68,7 +71,7 @@ a {
 
 }
 
-.control-btn:hover {
+.buttons .control-btn:hover {
     color: #fff;
     border-color: #2e80ce;
     background: #2e80ce;
@@ -173,7 +176,7 @@ a {
 
 .header-hero .contact .book-online {
     min-width: 205px;
-    height: 60px;
+    --height: 60px;
     border-radius: 30px;
 }
 
@@ -303,9 +306,11 @@ a {
     color: #575F66;
 }
 
-.service-content .btn {
+.service-content .services-btn {
+    --height: 60px;
     margin-top: 55px;
     min-width: 205px;
+    border-radius: 30px;
 }
 
 /* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Services ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
@@ -446,12 +451,13 @@ a {
     width: 468px;
 }
 
-.feature-content .btn {
+.feature-content .feature-btn {
+    --height: 60px;
     margin-top: 38px;
     min-width: 205px;
     font-weight: 400;
     font-size: 1.8rem;
-
+    border-radius: 30px;
 }
 
 /* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Feature ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
@@ -475,9 +481,11 @@ a {
     color: #10375C;
 }
 
-.members-top .btn {
+.members-top .members-btn {
+    --height: 60px;
     margin-top: 38px;
     min-width: 205px;
+    border-radius: 30px;
 }
 
 .members .members-list {
@@ -703,8 +711,59 @@ new-item:hover .new-content {
 
 /* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ News & Events. ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
 
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Appointment ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+.appointment {
+    padding: 85px 0;
+}
+
+.appointment-content {
+    background: #F7FBFF;
+    padding: 100px 179px;
+    text-align: center;
+}
+
+.appointment .appointment-title {
+    font-weight: 600;
+    font-size: 5.0rem;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #10375C;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.appointment .appointment-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    display: block;
+    width: 136px;
+    height: 2px;
+    background: #2e80ce;
+}
+
+.appointment .appointment-desc {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    max-width: 617px;
+    color: #575F66;
+    margin: 18px auto 0;
+}
+
+.appointment .appointment-btn {
+    --height: 60px;
+    margin-top: 38px;
+    min-width: 205px;
+}
+
+/* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Appointment ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
+
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Footer ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
 
 
-/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
-
-/* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑  ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
+/* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Footer ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
